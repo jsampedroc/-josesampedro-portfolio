@@ -4,10 +4,8 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/-josesampedro-portfolio/', // ya lo tenías
+  base: '/-josesampedro-portfolio/', // ← nombre del repo, con el guion inicial
   resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
-    },
-  },
+    alias: { '@': path.resolve(__dirname, 'src') }
+  }
 })
